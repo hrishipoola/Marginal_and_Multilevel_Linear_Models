@@ -1,1 +1,15 @@
-# Marginal_and_Multilevel_Linear_Models
+Marginal and Multilevel Linear Models
+
+In a previous post, we dug into the NHANES national health and nutrition data set to answer some interesting questions using confidence intervals and hypothesis tests (https://crawstat.com/2020/06/09/uninsured-racial-disparity-blood-pressure-gender-smoker-diffs/). Here, we'll look at predicting systolic blood pressure by fitting, diagnosing, and comparing linear regression models, first with ordinary least squares (OLS) adopting the simplifying assumption of independent samples, and then with marginal and multilevel models taking into account NHANES' geographic cluster sampling design.
+
+Part 1: we'll fit and diagnose an OLS regression of systolic blood pressure on 5 independent variables assuming fully independent samples.
+
+Part 2: we'll visualize and assess mean structure by plotting systolic blood pressure against select focus variables.
+
+Part 3: we'll visualize and assess variance structure by generating a mean-variance relationship (residuals vs. fitted values), partial residual plots, and an added variable plot.
+
+Part 4: we'll take into account within-cluster dependencies, using a marginal linear model, in this case, a generalized estimating equation (GEE).
+
+Part 5: we'll take into account between-cluster differences, using a multilevel linear model (aka hierarchical or mixed effects model).
+
+We'll walk through how to fit linear models and diagnose and compare them by interpreting parameters, standard errors, variance, and residual plots. We'll also see within-cluster dependencies and between-cluster variance at work and how accounting for them helps us develop more accurate and meaningful models. Let's dig in. 
